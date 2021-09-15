@@ -490,5 +490,24 @@ nav .left-sec {
     .about-us-wrap img {
         max-height: 300px;
     }
+    
+    .tl-wrap .odd, .tl-wrap .even{
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+            "line-section date"
+            "line-section detail"
+    }
+    
+    .odd .detail:after, .even .detail:before{
+        display: none;
+    }
+    
+    .even .date{
+        align-items: start;
+    }
+    
+    .tl-wrap > div{
+        gap: 8px;
+    }
 
 }
